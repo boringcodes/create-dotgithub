@@ -1,49 +1,73 @@
 <div align="center">
-  <h1>repo-template</h1>
-  <p>Boring GitHub Repository Template</p>
+  <h1>create-dotgithub</h1>
+  <p>Boring GitHub Dotfiles Generator (download from <a href="https://github.com/boringcodes/dotgithub">boringcodes/dotgithub</a>)</p>
 
-  <div>
-    <a href="https://github.com/boringcodes/repo-template/commits" aria-label="Commitizen Friendly">
+  <p>
+    <a href="https://github.com/boringcodes/create-dotgithub/commits" aria-label="Commitizen Friendly">
       <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/repo-template" aria-label="Prettier Code Style">
+    <a href="https://github.com/boringcodes/create-dotgithub" aria-label="Prettier Code Style">
       <img src="https://img.shields.io/badge/code_style-prettier-brightgreen?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/repo-template/actions" aria-label="GitHub Workflow Status">
-      <img src="https://img.shields.io/github/workflow/status/boringcodes/repo-template/main?style=flat-square">
+    <a href="https://github.com/boringcodes/create-dotgithub/actions" aria-label="GitHub Workflow Status">
+      <img src="https://img.shields.io/github/workflow/status/boringcodes/create-dotgithub/main?style=flat-square">
     </a>
-    <a href="https://david-dm.org/boringcodes/repo-template" aria-label="Dependencies Status">
-      <img src="https://img.shields.io/david/boringcodes/repo-template?style=flat-square">
+    <a href="https://david-dm.org/boringcodes/create-dotgithub" aria-label="Dependencies Status">
+      <img src="https://img.shields.io/david/boringcodes/create-dotgithub?style=flat-square">
     </a>
-    <a href="https://www.npmjs.com/package/@boringcodes/repo-template" aria-label="NPM Version">
-      <img src="https://img.shields.io/npm/v/@boringcodes/repo-template?color=brightgreen&style=flat-square">
+    <a href="https://www.npmjs.com/package/generator-create-dotgithub" aria-label="NPM Version">
+      <img src="https://img.shields.io/npm/v/generator-create-dotgithub?color=brightgreen&style=flat-square">
     </a>
-    <a href="https://www.npmjs.com/package/@boringcodes/repo-template" aria-label="NPM Downloads">
-      <img src="https://img.shields.io/npm/dm/@boringcodes/repo-template?style=flat-square">
+    <a href="https://www.npmjs.com/package/generator-create-dotgithub" aria-label="NPM Downloads">
+      <img src="https://img.shields.io/npm/dm/generator-create-dotgithub?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/repo-template/blob/master/LICENSE" aria-label="MIT License">
-      <img src="https://img.shields.io/github/license/boringcodes/repo-template?color=brightgreen&style=flat-square">
+    <a href="https://github.com/boringcodes/create-dotgithub/blob/master/LICENSE" aria-label="MIT License">
+      <img src="https://img.shields.io/github/license/boringcodes/create-dotgithub?color=brightgreen&style=flat-square">
     </a>
     <a href="https://github.com/boringcodes" aria-label="BoringCodes Verified">
       <img src="https://img.shields.io/badge/boringcodes-verified-brightgreen?style=flat-square">
     </a>
-  </div>
+  </p>
+
+  <img src="banner.png">
 </div>
 
-## Installation
+## Features
 
-Use the package manager to install foobar
+- [x] Workflows
+- [ ] Actions
 
-```bash
-yarn add foobar
+## Install
+
+Make sure `yeoman` is installed
+
+```sh
+$ yarn global add yo
+```
+
+Then install the generator
+
+```sh
+$ yarn global add generator-create-dotgithub
 ```
 
 ## Usage
 
-```javascript
-import foobar from 'foobar';
+Then navigate to the root directory and run the following command to generate source
 
-foobar();
+```sh
+$ yo create-dotgithub
+```
+
+This scaffolds out
+
+```
+├── .github
+│   └── actions
+│   │   └── generated-action.yml
+│   └── workflows
+│       └── generated-workflow.yml
+└── ...
 ```
 
 ## Contributing
@@ -58,4 +82,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://github.com/boringcodes/repo-template/blob/master/LICENSE)
+[MIT](https://github.com/boringcodes/create-dotgithub/blob/master/LICENSE)
