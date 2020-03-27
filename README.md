@@ -9,8 +9,8 @@
     <a href="https://github.com/boringcodes/create-dotgithub" aria-label="Prettier Code Style">
       <img src="https://img.shields.io/badge/code_style-prettier-brightgreen?style=flat-square">
     </a>
-    <a href="https://github.com/boringcodes/create-dotgithub/actions" aria-label="GitHub Workflow Status">
-      <img src="https://img.shields.io/github/workflow/status/boringcodes/create-dotgithub/publish-npm?style=flat-square">
+    <a href="https://github.com/boringcodes/create-dotgithub/actions" aria-label="Lint Status">
+      <img src="https://img.shields.io/github/workflow/status/boringcodes/create-dotgithub/lint-source?style=flat-square&label=lint">
     </a>
     <a href="https://david-dm.org/boringcodes/create-dotgithub" aria-label="Dependencies Status">
       <img src="https://img.shields.io/david/boringcodes/create-dotgithub?style=flat-square">
