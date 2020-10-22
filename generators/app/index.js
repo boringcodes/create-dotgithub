@@ -6,14 +6,16 @@ const axios = require('axios').default;
 const pkg = require('../../package.json');
 
 const orgName = 'boringcodes';
-const repoName = 'dotgithub';
+const repoName = '.github';
 const getApiUrl = (type, sha) => {
   const ghApiUrl = 'https://api.github.com';
 
   return `${ghApiUrl}/repos/${orgName}/${repoName}/git/${type}/${sha}`;
 };
 const findWorkflowsFromTree = (tree) => {
-  return tree.find(({ path, type }) => path === 'workflows' && type === 'tree');
+  return tree.find(
+    ({ path, type }) => path === 'workflow-templates' && type === 'tree',
+  );
 };
 
 module.exports = class extends Generator {
@@ -34,10 +36,12 @@ module.exports = class extends Generator {
         type: 'list',
         name: 'elementSelectedWorkflow',
         message: 'Please select the workflow you want to add?',
-        choices: workflowsDir.tree.map((item) => ({
-          name: item.path,
-          value: item,
-        })),
+        choices: workflowsDir.tree
+          .filter((item) => /\.yml$/.exec(item.path))
+          .map((item) => ({
+            name: item.path,
+            value: item,
+          })),
       },
     ];
 

@@ -1,6 +1,6 @@
 <div align="center">
   <h1>create-dotgithub</h1>
-  <p>Boring GitHub Dotfiles Generator (download from <a href="https://github.com/boringcodes/dotgithub">boringcodes/dotgithub</a>)</p>
+  <p>Boring GitHub Dotfiles Generator (download from <a href="https://github.com/boringcodes/.github">boringcodes/.github</a>)</p>
 
   <p>
     <a href="https://github.com/boringcodes/create-dotgithub/commits" aria-label="Commitizen Friendly">
