@@ -1,3 +1,4 @@
 {
-  "**/*.js": ["yarn format", "yarn lint"]
+  "*.{js,json,md,yml}": "yarn format",
+  "*.js": "yarn lint"
 }
