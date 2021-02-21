@@ -1,6 +1,6 @@
 <div align="center">
   <h1>create-dotgithub</h1>
-  <p>Boring GitHub Dotfiles Generator (download from <a href="https://github.com/boringcodes/.github">boringcodes/.github</a>)</p>
+  <p>Boring GitHub Dotfiles Generator (templates fetched from <a href="https://github.com/boringcodes/.github">boringcodes/.github</a>)</p>
 
   <p>
     <a href="https://github.com/boringcodes/create-dotgithub/commits" aria-label="Commitizen Friendly">
@@ -34,8 +34,25 @@
 
 ## Features
 
-- [x] Workflows
-- [ ] Actions
+Supported features:
+
+- [x] **Workflows**
+- [ ] **Actions**
+
+Workflows grouped by steps:
+
+- Test
+  - [x] **lint-source.yml**: check code style & quality
+  - [ ] **test.yml**: run unit test
+- Build
+  - [x] **build-source.yml**: build source
+  - [x] **build-image.yml**: build Docker image
+- Push
+  - [x] **create-github-release.yml**: create GitHub Release
+  - [x] **publish-npm.yml**: publish source to NPM Registry
+  - [x] **push-dockerhub.yml**: push Docker image to DockerHub
+- Deploy
+  - [x] **deploy-cloudflare-workers.yml**: deploy source to CloudFlare Workers
 
 ## Install
 
