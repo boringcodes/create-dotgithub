@@ -1,6 +1,6 @@
 {
   "name": "generator-create-dotgithub",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Boring GitHub Dotfiles Generator (download from boringcodes/dotgithub)",
   "homepage": "https://github.com/boringcodes/create-dotgithub",
   "bugs": "https://github.com/boringcodes/create-dotgithub/issues",
