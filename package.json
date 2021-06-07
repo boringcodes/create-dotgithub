@@ -11,6 +11,9 @@
   "files": [
     "generators"
   ],
+  "engines": {
+    "node": ">=12.10.0"
+  },
   "scripts": {
     "purge": "rimraf node_modules",
     "format": "prettier --write --ignore-path .gitignore .",
